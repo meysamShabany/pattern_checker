@@ -34,7 +34,8 @@ class CheckPattern:
         else:
             return True
     def check_english_lang(self):
-        if re.fullmatch(r'^[A-Za-z0-9\s.,!?\'"()]*$' , self.value.strip()):
+        pattern = r'^[A-Za-z0-9\s.,!?\'"()]*$'
+        if re.fullmatch(pattern , self.value.strip()):
             return True
         else:
             return False
@@ -60,23 +61,32 @@ class CheckPattern:
         return False
         
     def check_iranian_phone(self):
-        #r'^09(0[0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|6[0-9]|7[0-9]|8[0-9]|9[0-9])-?[0-9]{3}-?[0-9]{4}$'
-        #r"^(?:+98|0)9d{9}$"
-        if re.match(r'^09(0[0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|6[0-9]|7[0-9]|8[0-9]|9[0-9])-?[0-9]{3}-?[0-9]{4}$' , self.value):
+        pattern = r'^09(0[0-9]|1[0-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|6[0-9]|7[0-9]|8[0-9]|9[0-9])-?[0-9]{3}-?[0-9]{4}$'
+        if re.match(pattern , self.value):
             return True
         else:
             return False
     def check_email_pattern(self):
-        if re.fullmatch("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$" , self.value):
+        pattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+        if re.fullmatch(pattern , self.value):
             return True
         else:
             return False
     def check_password_upper_lower_number_specific(self):
-        if re.fullmatch(r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!#%*?&]{6,20}$' , self.value):
+        pattern = r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!#%*?&]{6,20}$'
+        if re.fullmatch(pattern , self.value):
             return True
         else:
             return False
     def check_password_letter_number(self):
-        pass
+        pattern = r'^(?=.*[a-zA-Z])(?=.*\d).+$'
+        if re.fullmatch(pattern , self.value):
+            return True
+        else:
+            return False
     def check_password_upper_lower_number(self):
-        pass
+        pattern = r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$'
+        if re.fullmatch(pattern , self.value):
+            return True
+        else:
+            return False
