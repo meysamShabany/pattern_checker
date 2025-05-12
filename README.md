@@ -10,14 +10,8 @@ pip install pattern-checker
 from pattern_checker import CheckPattern
 
 
-checker = CheckPattern("09123456789")
+![pattern](https://github.com/user-attachments/assets/e2250ddc-1671-4d27-b99a-f3b1db9ce183)
 
-print(checker.check_iranian_phone())  # return True
-
-
-checker = CheckPattern("example@email.com")
-
-print(checker.check_email_pattern())  # return True
 
 # Contributing
 Pull requests are welcome. For major changes,
