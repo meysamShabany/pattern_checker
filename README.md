@@ -1,7 +1,26 @@
-this pakage develop by mft python developers
-final goal for this pakage access to popular
-pattern for validation in python projects 
-thanks for watch and send you opinion 
 
+A Python package for validating various patterns such as phone numbers, emails, and passwords.
 
-![check_patterns - Copy](https://github.com/user-attachments/assets/af700224-c458-46d3-bc4e-93f828985c79)
+# Installation
+
+bash
+pip install pattern-checker
+
+Usage
+
+from pattern_checker import CheckPattern
+
+# Initialize with a value
+checker = CheckPattern("09123456789")
+
+# Check Iranian Phone Number
+print(checker.check_iranian_phone())  # True
+
+# Check Email
+checker = CheckPattern("example@email.com")
+print(checker.check_email_pattern())  # True
+
+Contributing
+Pull requests are welcome. For major changes,
+please open an issue first to discuss what you
+would like to change.

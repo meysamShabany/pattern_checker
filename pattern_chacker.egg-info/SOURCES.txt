@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+pattern_chacker/__init__.py
+pattern_chacker/core.py
+pattern_chacker.egg-info/PKG-INFO
+pattern_chacker.egg-info/SOURCES.txt
+pattern_chacker.egg-info/dependency_links.txt
+pattern_chacker.egg-info/top_level.txt
+pattern_chacker/patterns/__init__.py
+pattern_chacker/patterns/basic.py
+pattern_chacker/patterns/iranian.py
+pattern_chacker/patterns/password.py
+tests/test_core.py
+tests/test_patterns.py
