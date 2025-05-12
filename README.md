@@ -3,7 +3,6 @@ A Python package for validating various patterns such as phone numbers, emails, 
 
 # Installation
 
-bash
 pip install pattern-checker
 
 # Usage
