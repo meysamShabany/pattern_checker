@@ -12,11 +12,13 @@ from pattern_checker import CheckPattern
 
 
 checker = CheckPattern("09123456789")
-print(checker.check_iranian_phone())  # True
+
+print(checker.check_iranian_phone())  # return True
 
 
 checker = CheckPattern("example@email.com")
-print(checker.check_email_pattern())  # True
+
+print(checker.check_email_pattern())  # return True
 
 # Contributing
 Pull requests are welcome. For major changes,
