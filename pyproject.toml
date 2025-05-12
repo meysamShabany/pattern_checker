@@ -19,7 +19,7 @@ classifiers = [
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
 ]
-dependencies = []
+dependencies = [re]
 
 [project.urls]
 "Homepage" = "https://github.com/meysamShabany/pattern_checker"
