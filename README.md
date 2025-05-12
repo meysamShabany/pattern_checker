@@ -10,13 +10,13 @@ pip install pattern-checker
 
 from pattern_checker import CheckPattern
 
-## Initialize with a value
+ Initialize with a value
 checker = CheckPattern("09123456789")
 
-## Check Iranian Phone Number
+ Check Iranian Phone Number
 print(checker.check_iranian_phone())  # True
 
-## Check Email
+ Check Email
 checker = CheckPattern("example@email.com")
 print(checker.check_email_pattern())  # True
 
