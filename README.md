@@ -7,7 +7,7 @@ pip install pattern-chacker
 
 # Usage
 
-from pattern_checker import CheckPattern
+from pattern_chacker import CheckPattern
 
 
 ![pattern](https://github.com/user-attachments/assets/e2250ddc-1671-4d27-b99a-f3b1db9ce183)
