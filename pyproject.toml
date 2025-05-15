@@ -13,7 +13,5 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 
-
-[project.urls]
 Homepage = "https://github.com/meysamShabany/pattern_checker"
 Bug Tracker = "https://github.com/meysamShabany/pattern_checker/issues"
