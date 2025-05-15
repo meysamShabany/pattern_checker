@@ -1,26 +1,19 @@
-
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "pattern-checker"
-version = "0.1.0"
+name = "pattern-chacker"
+version = "1.0.2"
+description = "A Python package for validating patterns like emails, phone numbers,nation code, and passwords and etc."  
+readme = {file = "README.md", content-type = "text/markdown"}  
+license = {file = "LICENSE"}
 authors = [
-  { name = "Meisam Shabany", email = "meisam.shabany@gmail.com" },
+    {name = "Meisam Shabany", email = "meisam.shabany@gmail.com"},
 ]
-description = "A Python package for validating various patterns."
-readme = "README.md"
-requires-python = ">=3.6"
-license = { file = "LICENSE" }
-keywords = ["pattern", "validation", "regex"]
+keywords = ["validation", "patterns", "email", "phone", "password","nation code"]
 classifiers = [
-  "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: MIT License",
-  "Operating System :: OS Independent",
-]
-dependencies = [re]
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+
 
 [project.urls]
-"Homepage" = "https://github.com/meysamShabany/pattern_checker"
-"Bug Tracker" = "https://github.com/meysamShabany/pattern_checker/issues"
+Homepage = "https://github.com/meysamShabany/pattern_checker"
+Bug Tracker = "https://github.com/meysamShabany/pattern_checker/issues"
